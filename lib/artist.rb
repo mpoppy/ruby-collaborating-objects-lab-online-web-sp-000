@@ -28,6 +28,9 @@ class Artist
     if @@all.include?(name)
       #check if the object id's match
       if @@all.object_id.include?
+      else
+        name = Artist.new(name)
+      end
     else
       name = Artist.new(name)
     end
