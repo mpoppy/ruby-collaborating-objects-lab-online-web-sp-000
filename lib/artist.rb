@@ -28,7 +28,7 @@ class Artist
     if find_song == nil
       name = Artist.new(name)
     else
-      find_song[0]
+      
     end
   end
 
