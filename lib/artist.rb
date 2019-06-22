@@ -24,8 +24,11 @@ class Artist
   end
 
   def self.find_or_create_by_name(name)
-    self.all.map {|object| if object.name == name}
+    find_songs = self.all.map {|object| if object.name == name}
+      if find_songs == nil
       name = Artist.new(name)
+    else
+      find_songs
   end
 
 end
