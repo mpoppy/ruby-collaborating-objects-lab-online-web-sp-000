@@ -29,6 +29,7 @@ class Artist
       if self.all.include?(object_id)
       else
         name = Artist.new(name)
+      end
       #true do this
       #check if the object id's match
     else #if condition false
