@@ -28,7 +28,7 @@ class Artist
     if @@all.include?(name)
         name = Artist.new(name)
     else
-      self.name
+      name = Artist.new(name)
     end
   end
 
