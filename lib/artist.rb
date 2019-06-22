@@ -24,7 +24,7 @@ class Artist
   end
 
   def self.find_or_create_by_name(name)
-    all.each_with_object
+    self.all each do |object|
 
 
     else
