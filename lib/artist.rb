@@ -25,11 +25,11 @@ class Artist
 
   def self.find_or_create_by_name(name)
     self.all.select |object| do
-      object.name 
+      object.name
     end
     # end
-    # 
-    # 
+    #
+    #
     # else
     #   name = Artist.new(name)
     # end
