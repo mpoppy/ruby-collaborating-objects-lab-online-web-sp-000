@@ -24,8 +24,6 @@ class Artist
   end
 
   def self.find_or_create_by_name(name)
-    if self.all.map {|object| if object.name == name else name = Artist.new(name)} 
-      name = Artist.new(name)
-    end
+    self.all.map {|object| if object.name == name else name = Artist.new(name)} 
 
 end
