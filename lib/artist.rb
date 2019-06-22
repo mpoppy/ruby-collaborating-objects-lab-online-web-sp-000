@@ -24,14 +24,10 @@ class Artist
   end
 
   def self.find_or_create_by_name(name)
-    self.all.select {|object| object.name == name}
-
-    # end
-    #
-    #
-    # else
-    #   name = Artist.new(name)
-    # end
+    if self.all.select {|object| object.name == name}
+    else
+     name = Artist.new(name)
+    end
   end
 
 end
