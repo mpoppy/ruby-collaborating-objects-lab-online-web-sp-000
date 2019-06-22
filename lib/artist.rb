@@ -24,7 +24,7 @@ class Artist
   end
 
   def self.find_or_create_by_name(name)
-    self.all.select {|object| object.include?(name)}
+    self.all.select {|object| object.name == name}
     
     # end
     #
