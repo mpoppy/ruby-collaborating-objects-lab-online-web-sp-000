@@ -27,10 +27,6 @@ class Artist
     #find first if doesn't exist then create a new instance of Artist and assign name
     if @@all.include?(name)
       #check if the object id's match
-      if @@all.object_id.include?
-      else
-        name = Artist.new(name)
-      end
     else
       name = Artist.new(name)
     end
