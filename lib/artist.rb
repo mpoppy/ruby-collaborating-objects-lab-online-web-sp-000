@@ -29,6 +29,7 @@ class Artist
       name = Artist.new(name)
     else
       find_songs
+    end
   end
 
 end
