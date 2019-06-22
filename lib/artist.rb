@@ -27,6 +27,8 @@ class Artist
     #find first if doesn't exist then create a new instance of Artist and assign name
     if self.all.include?(name)
       if self.all.include?(object_id)
+      else
+        name = Artist.new(name)
       #true do this
       #check if the object id's match
     else #if condition false
