@@ -24,10 +24,8 @@ class Artist
   end
 
   def self.find_or_create_by_name(name)
-    #find first if doesn't exist then create a new instance of Artist and assign name
     if self.all.include?(name)
-
-    else 
+    else
       name = Artist.new(name)
     end
   end
