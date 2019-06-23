@@ -13,7 +13,7 @@ class Song
     song.artist = Artist.new(name_split[0])
     # artist.save
     song
-    song.artist
+    song.artist.save
   end
 
 end
