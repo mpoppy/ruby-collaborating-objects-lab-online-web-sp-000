@@ -12,7 +12,7 @@ class Song
     # song_artist = file_name.split(" - ")[0]
     song = self.new(song_name)
     song.artist = file_name.split(" - ")[0]
-    # song.artist = Artist.new(song_artist)
+    
   end
 
 
