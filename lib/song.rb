@@ -12,7 +12,7 @@ class Song
     song = self.new(name_split[1])
     song.artist = Artist.new(name_split[0])
     song.artist.add_song
-    song.artist.save
+    song.artist.save(song)
     song
 
   end
