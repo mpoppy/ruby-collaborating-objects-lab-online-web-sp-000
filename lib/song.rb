@@ -14,7 +14,6 @@ class Song
     song.artist.add_song(song)
     song.artist.save
     song
-
   end
 
 end
